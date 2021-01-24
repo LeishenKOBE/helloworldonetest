@@ -3,8 +3,9 @@
   "version": "1.0.1",
   "description": "重新写一下自己的这个项目",
   "main": "index.js",
+  "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/LeishenKOBE/helloworldonetest/issues"
   },
-  "homepage": "https://github.com/LeishenKOBE/helloworldonetest#readme"
+  "homepage": "https://github.com/LeishenKOBE/helloworldonetest#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@rollup/plugin-babel": "^5.2.2",
+    "rollup": "^2.38.0"
+  }
 }
